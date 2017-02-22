@@ -9,10 +9,7 @@ var articleOne = {
     title: 'first article | meenakshi',
     heading: 'article-one',
     date: '10/feb/2017',
-    content: 
-            '<p>
-                Hello, Finally I also made some changes successfully. Thanks alot for teaching us this thing.
-             </p>',
+    
 };
 
 app.get('/article-one',function(req,res){
