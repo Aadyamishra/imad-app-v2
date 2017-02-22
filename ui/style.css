@@ -19,7 +19,7 @@ body {
 }
 
 .img-medium {
-    (<margin-width> | inherit);
+    margin-top: inherit;
     height: 150px;
 }
 
