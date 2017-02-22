@@ -3,7 +3,6 @@ body {
     background-color: lightgrey;
     margin-top: 75px;
     padding-left: 200px;
-    padding-right:200px;
 }
 
 .center {
@@ -19,7 +18,6 @@ body {
 }
 
 .img-medium {
-    
     height: 150px;
 }
 
