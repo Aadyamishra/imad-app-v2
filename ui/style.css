@@ -21,3 +21,12 @@ body {
     height: 150px;
 }
 
+
+.container{
+        
+     max-width: 300px;
+     margin: 50px;
+     color: blue;
+     font-family: cambria;
+     }
+         
