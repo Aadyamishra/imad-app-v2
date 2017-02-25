@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+articleOne : {
     title: 'first article | meenakshi',
     heading: 'article-one',
     date: '10/feb/2017',
@@ -13,8 +14,18 @@ var articleOne = {
             <p>
                 Hello, Finally I also made some changes successfully. Thanks alot for teaching us this thing.
             </p>`
-    };
-    
+    },
+articleTwo : {
+    title: 'second article | meenakshi',
+    heading: 'article-two',
+    date: '20/feb/2017',
+    content: `
+              <p>
+                Hi this is my second file. 
+          </p>`
+    },
+};
+
 function  createTemplate(data) {
     var title = data.title;
     var date = data.date;
@@ -54,7 +65,7 @@ return htmltemplate;
 }
 
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createTemplate(article-one));
 });
  app.get('/article-two',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
