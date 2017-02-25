@@ -65,7 +65,7 @@ var htmlTemplate =  `
   return htmlTemplate; 
 }
 
-app.get('/article-one', function(req,res){
+app.get('/:article-one', function(req,res){
     res.send(createTemplate(articles));
 });
  app.get('/article-two',function(req,res){
