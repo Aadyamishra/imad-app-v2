@@ -32,7 +32,7 @@ function  createTemplate(data) {
     var heading = data.heading;
     var content = data.content; 
 
-var htmltemplate =  `
+var htmlTemplate =  `
     <!DOCTYPE html>
     <head>
         <title>
@@ -61,10 +61,10 @@ var htmltemplate =  `
     </html>    
     
 `;
-return htmltemplate; 
+  return htmlTemplate; 
 }
 
-app.get('/article-one',function(req,res){
+app.get('/article-one', function(req,res){
     res.send(createTemplate(articleOne));
 });
  app.get('/article-two',function(req,res){
