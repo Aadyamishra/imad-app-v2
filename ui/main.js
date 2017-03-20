@@ -7,7 +7,7 @@ img.onclick = function () {
 };
 var user=prompt("are you sure you want to write");
 if(user==="yes") {
-    console.log("well done");
+    confirm("well done");
     } else {
-        console.log("sorry");
+        confirm("sorry");
     }
