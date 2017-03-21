@@ -84,7 +84,7 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-app.get('/api/weather', function (req, res) {
+app.get('/api/getWeather', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
