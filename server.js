@@ -85,15 +85,6 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-$.ajax({
-  url: "/api/getWeather",
-  data: {
-    zipcode: 97201
-  },
-  success: function( result ) {
-    $( "#weather-temp" ).html( "<strong>" + result + "</strong> degrees" );
-  }
-});
 
 
 
