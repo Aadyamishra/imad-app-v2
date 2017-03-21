@@ -85,7 +85,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 app.get('/api/getWeather', function (req, res) {
-  res.sendFile(path.join(    $.ajax({
+  res.sendFile(path.join(    ajax({
   url: "/api/getWeather",
   data: {
     zipcode: 97201
